@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+	font-size: 16px;
+	font-family: Lato, sans-serif;
+	color: white;
+}
+
+body {
+	background: url('http://www.programadorajava.com/_/rsrc/1342486680426/config/bg.jpg.1342486680167.jpg') center center no-repeat #000;
+}
+
+html, body {
+	height: 100%;
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #f63939;	
+}
+
+h3 {
+	font-size: 1.2em;
+	color: #ffffff;	
+}
+
+p {
+	line-height: 1.3;
+}
+
+.container {
+	max-width: 960px;
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.menu {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.menu .link {
+	color: white;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.menu .link:first-child {
+	margin-left: 0;
+}
+
+.menu .link.active {
+	color: #008590;
+}
+
+.main-title {
+	font-size: 3em;
+	text-align: right;
+	margin-top: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #f63939;
+}
+
+.subtitle {
+	text-align: right;
+	padding-top: .5em;
+	margin-bottom: 1em;
+}
+
+.box {
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.box h3 {
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.box h3:first-child {
+	margin-top: 0;
+}
+
+.box.green {
+	border-left: 5px solid #4E8B00;
+	background-color: rgba(78, 139, 0, 0.85);
+}
