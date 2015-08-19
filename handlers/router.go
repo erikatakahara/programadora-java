@@ -9,5 +9,6 @@ func init() {
     r := mux.NewRouter()
     
     r.HandleFunc("/", Index)
+    r.HandleFunc("/curriculum", Curriculum)
     http.Handle("/", r)
 }

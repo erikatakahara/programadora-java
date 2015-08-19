@@ -9,9 +9,13 @@
 </head>
 <body>
 	<header class='container'>
+		<h1 class='main-title'>Erika Takahara</h1>
+		<h2 class='subtitle'>WebDeveloper</h2>
+		<input id='menu-trigger' type='checkbox'>
+		<label class='pull-menu' for='menu-trigger'>Menu</label>
 		<nav class='menu'>
-			<a class='link' href='/' title='Home'>Home</a>
-			<a class='link' href='/curriculum' title='Home'>Curriculum</a>
+			<a class='link {{if eq . "home"}} active {{end}}' href='/' title='Home'>Home</a>
+			<a class='link {{if eq . "curriculum"}} active {{end}}' href='/curriculum' title='Home'>Curriculum</a>
 		</nav>
 	</header>
 	<section class='main container'>
