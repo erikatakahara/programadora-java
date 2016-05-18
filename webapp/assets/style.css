@@ -294,3 +294,56 @@ p {
 	}
 
 }
+
+#map {
+    height: 430px;
+    position: relative;
+    width: 100%;
+}
+
+#map .preview img {
+	float: left;
+	margin-right: 1em;
+}
+
+#map .preview p {
+	font-weight: 500;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+#map .preview dt {
+	font-weight: 500;
+	margin-right: 0.25em;
+	display: inline;
+}
+
+#map .preview dd {
+	display: inline;
+}
+
+#map .preview dd + dt:before {
+	content: '\A';
+	display: block;
+	white-space: pre;
+}
+
+#map .preview a {
+	color: #535387;
+}
+
+#pac-input {
+	display: none;
+	background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    margin-left: 0.5em;
+    margin-top: 0.75em;
+    padding: 0.4em 0.5em;
+    width: 400px;
+}
+
+.gm-style #pac-input {
+	display: block;
+}

@@ -22,3 +22,12 @@ func Curriculum(w http.ResponseWriter, r *http.Request) {
         return
     }
 }
+
+func TravelLab(w http.ResponseWriter, r *http.Request) {
+    t := template.Must(template.ParseFiles("webapp/templates/base.html", "webapp/pages/travel.html"))
+    err := t.Execute(w, "travel")
+    if err != nil {
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
+}

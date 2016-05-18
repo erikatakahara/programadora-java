@@ -10,5 +10,6 @@ func init() {
     
     r.HandleFunc("/", Index)
     r.HandleFunc("/curriculum", Curriculum)
+    r.HandleFunc("/labs/travel", TravelLab)
     http.Handle("/", r)
 }
