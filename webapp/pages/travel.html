@@ -1,0 +1,17 @@
+{{ define "content"}}
+	<article class='box green'>
+		<h3>Travel Lab</h3>
+		<p>Aplicativo simples para marcacao de rotas.</p>
+	</article>
+	<section>
+		<ol id="list">
+		</ol>
+		<input id="pac-input">
+		<input id="add-place" value='Add' type="button">
+		<div id="map"></div>
+	</section>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmoVP5NrA4ggHuuWBX7XvRrHlECJj4ar4&libraries=places"></script>
+	<script type="text/javascript" src="/assets/js/travel-lab.js"></script>
+{{ end }}

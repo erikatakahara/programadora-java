@@ -1,6 +1,36 @@
 @charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(//fonts.gstatic.com/s/lato/v11/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(//fonts.gstatic.com/s/lato/v11/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(//fonts.gstatic.com/s/lato/v11/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(//fonts.gstatic.com/s/lato/v11/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -62,14 +92,12 @@ table {
 html {
 	font-size: 16px;
 	font-family: Lato, sans-serif;
-	color: white;
+	color: #3e3e3e;
 	height: 100%;
 }
 
 body {
-	background: url('http://www.programadorajava.com/_/rsrc/1342486680426/config/bg.jpg.1342486680167.jpg') center center no-repeat #000;
-	background-attachment: fixed;
-	background-size: 100% auto;
+	background-color: #fff;
 	min-height: 100%;
 }
 
@@ -93,7 +121,7 @@ h2 {
 
 h3 {
 	font-size: 1.2em;
-	color: #ffffff;	
+	color: #3e3e3e;	
 }
 
 p {
@@ -117,7 +145,7 @@ p {
 	top: 0em;
 	left: 0;
 	right: 0;
-	background-color: rgba(0, 0, 0, .8);
+	background-color: #fff;
 	border-bottom: 2px solid #F63939;
 	transition: left 0.5s ease-in;
 }
@@ -148,7 +176,8 @@ p {
 	bottom: 0;
 	left: -60%;
 	width: 60%;
-	background-color: rgba(0, 0, 0, 0.85);
+	background-color: #fff;
+	border-right: 1px solid #efefef;
 	transition: left 0.5s ease-in;
 }
 
@@ -185,7 +214,6 @@ p {
 	padding: 1em;
 	margin-top: 2em;
 	margin-bottom: 2em;
-	background-color: rgba(0, 0, 0, 0.85);
 }
 
 .box ul {
@@ -265,4 +293,104 @@ p {
 		display: inline-block;
 	}
 
+}
+
+#map {
+    height: 430px;
+    position: relative;
+    width: 100%;
+}
+
+#map .preview img {
+	float: left;
+	margin-right: 1em;
+}
+
+#map .preview p {
+	font-weight: 500;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+#map .preview dt {
+	font-weight: 500;
+	margin-right: 0.25em;
+	display: inline;
+}
+
+#map .preview dd {
+	display: inline;
+}
+
+#map .preview dd + dt:before {
+	content: '\A';
+	display: block;
+	white-space: pre;
+}
+
+#map .preview a {
+	color: #535387;
+}
+
+#pac-input {
+	display: none;
+	background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    margin-left: 0.5em;
+    margin-top: 0.75em;
+    padding: 0.4em 0.5em;
+    width: 400px;
+}
+
+.gm-style #pac-input {
+	display: block;
+}
+
+/* Notification Lab API */
+.btn-notify {
+	background-color: transparent;
+	border: 1px solid gray;
+	padding: 0.5em 2em;
+	color: gray;
+	font-weight: 700;
+	font-family: inherit;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.btn-notify:hover {
+	background-color: gray;
+	color: white; 
+}
+
+.btn-notify.red {
+	color: #F63939;
+	border-color: #F63939;
+}
+
+.btn-notify.red:hover {
+	background-color: #F63939;
+	color: white;
+}
+
+.btn-notify.green {
+	color: #4E8B00;
+	border-color: #4E8B00;
+}
+
+.btn-notify.green:hover {
+	background-color: #4E8B00;
+	color: white;
+}
+
+.btn-notify.blue {
+	color: #535387;
+	border-color: #535387;
+}
+
+.btn-notify.blue:hover {
+	background-color: #535387;
+	color: white; 
 }

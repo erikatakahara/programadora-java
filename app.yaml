@@ -1,5 +1,5 @@
 application: programadora-java-1042
-version: 1
+version: http2
 runtime: go
 api_version: go1
 
@@ -7,8 +7,13 @@ handlers:
 - url: /assets
   static_dir: webapp/assets
 
-- url: /app
-  static_dir: webapp/app
+- url: /manifest\.json
+  static_files: webapp/service/manifest.json
+  upload: webapp/service/manifest.json
+
+- url: /notification\.js
+  static_files: webapp/service/notification.js
+  upload: webapp/service/notification.js
 
 - url: /.*
   script: _go_app
