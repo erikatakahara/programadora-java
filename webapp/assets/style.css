@@ -347,3 +347,50 @@ p {
 .gm-style #pac-input {
 	display: block;
 }
+
+/* Notification Lab API */
+.btn-notify {
+	background-color: transparent;
+	border: 1px solid gray;
+	padding: 0.5em 2em;
+	color: gray;
+	font-weight: 700;
+	font-family: inherit;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.btn-notify:hover {
+	background-color: gray;
+	color: white; 
+}
+
+.btn-notify.red {
+	color: #F63939;
+	border-color: #F63939;
+}
+
+.btn-notify.red:hover {
+	background-color: #F63939;
+	color: white;
+}
+
+.btn-notify.green {
+	color: #4E8B00;
+	border-color: #4E8B00;
+}
+
+.btn-notify.green:hover {
+	background-color: #4E8B00;
+	color: white;
+}
+
+.btn-notify.blue {
+	color: #535387;
+	border-color: #535387;
+}
+
+.btn-notify.blue:hover {
+	background-color: #535387;
+	color: white; 
+}

@@ -1,0 +1,13 @@
+{  
+  "name": "Notification Demo",  
+  "short_name": "Notification Demo",  
+  "icons": [{  
+        "src": "images/icon-192x192.png",  
+        "sizes": "192x192",
+        "type": "image/png"
+      }],  
+  "start_url": "/index.html?homescreen=1",  
+  "display": "standalone",  
+  "gcm_sender_id": "38319407439"
+}
+//AIzaSyCJH_Hqwy7oIL5-997z7Yn51-AIv508diA

@@ -6,6 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="/assets/style.css">
+	<link rel="manifest" href="/manifest.json">
 </head>
 <body>
 	<header class='container'>
@@ -21,5 +22,6 @@
 	<section class='main container'>
 		{{template "content"}}
 	</section>
+	{{template "js"}}{{define "js"}}{{end}}
 </body>
 </html>
